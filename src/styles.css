@@ -1,0 +1,139 @@
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+body{
+    background-color: rgb(59, 59, 59);
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40pt;
+    line-height: 0.2;
+    color: white;
+}
+
+.passwd{
+    border: white solid 4px;
+    border-radius: 7px;
+    background-color: white;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px 0;
+    height: auto;
+}
+
+.passwd-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17pt;
+    line-height: 0.3;
+    color: rgb(59, 59, 59);
+}
+
+.passwd-passwd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: rgb(59, 59, 59);
+    -webkit-text-security: disc;
+}
+
+.passwd-passwd:hover{
+    -webkit-text-security: none;
+}
+
+.passwd-btns{
+    list-style: inline;
+}
+
+.passwd-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    border: rgb(59, 59, 59) solid 3px;
+    border-radius: 7px;
+    transition: .5s ease;
+}
+
+.passwd-btn:hover{
+    border: white solid 3px;
+    color: rgb(59, 59, 59);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btns{
+    list-style: inline;
+}
+
+.button{
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    background-color: white;
+    border: white solid 4px;
+    border-radius: 7px;
+    transition: .5s ease;
+}
+
+.button:hover{
+    border: rgb(59, 59, 59) solid 4px;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.red{
+    color: white !important;
+    background-color: rgb(255, 48, 48) !important;
+    border: rgb(255, 48, 48) solid 4px !important;
+}
+
+.red:hover{
+    color: rgb(59, 59, 59) !important;
+    background-color: rgb(255, 48, 48) !important;
+    border: rgb(255, 48, 48) solid 4px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    background-color: white;
+    border: white solid 3px;
+    border-radius: 7px;
+    transition: .5s ease;
+}
+
+.input:focus{
+    outline: none;
+    border: rgb(59, 59, 59) solid 3px;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.passwd_dialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    z-index: 10;
+    display: none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Passwort Manager</title>
+</head>
+<body onload="load()">
+    <section>
+        <p class="title">Passwort Manager</p>
+        <div class="passwd" id="template" style="display: none;">
+            <p class="passwd-title">temp</p>
+            <p class="passwd-passwd">temp</p>
+            <p style="display: none;">0</p>
+            <div class="passwd-btns">
+                <button class="passwd-btn" onclick="cp(this.parentElement.parentElement.children[1])">Kopieren</button>
+                <button class="passwd-btn" onclick="del(this.parentElement.parentElement)">Löschen</button>
+            </div>
+        </div>
+        <div class="btns">
+            <button type="button" onclick="open_passwd_dialog()" class="button">Neues Passwort</button>
+        </div>
+    </section>
+    <section class="passwd_dialog" id="passwd_dialog">
+        <p class="title">Neues Passwort</p>
+        <input class="input" id="title_input" placeholder="Titel">
+        <input class="input" id="passwd_input" type="password" placeholder="Passwort" style="margin-top: 5px;">
+        <div class="btns">
+            <button class="button" onclick="new_passwd()">Bestätigen</button>
+            <button class="button red" onclick="close_passwd_dialog()">Schließen</button>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
